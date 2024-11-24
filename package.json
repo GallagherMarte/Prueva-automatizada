@@ -1,0 +1,18 @@
+{
+  "name": "prueba-formulario",
+  "version": "1.0.0",
+  "description": "Automatización de pruebas con Selenium y Mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests/*.spec.js --reporter mochawesome"
+  },
+  "author": "Gallagher",
+  "license": "MIT",
+  "dependencies": {
+    "selenium-webdriver": "^4.14.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3"
+  }
+}

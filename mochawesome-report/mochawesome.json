@@ -1,0 +1,214 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-24T01:20:48.670Z",
+    "end": "2024-11-24T01:21:01.583Z",
+    "duration": 12913,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e463c81e-2bf3-4d06-89cc-d18825777370",
+      "title": "",
+      "fullFile": "C:\\Users\\ELIAN\\Desktop\\Prueba Automatizada\\tests\\registro.spec.js",
+      "file": "\\tests\\registro.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "293f7e26-07a7-4f43-a95e-fc7173fe515c",
+          "title": "Pruebas del formulario de inscripción",
+          "fullFile": "C:\\Users\\ELIAN\\Desktop\\Prueba Automatizada\\tests\\registro.spec.js",
+          "file": "\\tests\\registro.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Pruebas del formulario de inscripción\"",
+              "fullTitle": "Pruebas del formulario de inscripción \"before all\" hook in \"Pruebas del formulario de inscripción\"",
+              "timedOut": false,
+              "duration": 2149,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();\nawait driver.get('http://127.0.0.1:5501/inscripcion.html');",
+              "err": {},
+              "uuid": "e02f67da-dc1d-4962-8169-bac14081ac6f",
+              "parentUUID": "293f7e26-07a7-4f43-a95e-fc7173fe515c",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Pruebas del formulario de inscripción\"",
+              "fullTitle": "Pruebas del formulario de inscripción \"after all\" hook in \"Pruebas del formulario de inscripción\"",
+              "timedOut": false,
+              "duration": 88,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "90eda80a-1eaa-4896-b0e8-8975e0142b60",
+              "parentUUID": "293f7e26-07a7-4f43-a95e-fc7173fe515c",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Debe verificar campos vacíos del formulario",
+              "fullTitle": "Pruebas del formulario de inscripción Debe verificar campos vacíos del formulario",
+              "timedOut": false,
+              "duration": 1543,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await ComposvaciosFormulario(driver);",
+              "err": {},
+              "uuid": "c3cb0aff-df98-4854-8601-b2ea89d045f5",
+              "parentUUID": "293f7e26-07a7-4f43-a95e-fc7173fe515c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Debe limpiar el formulario",
+              "fullTitle": "Pruebas del formulario de inscripción Debe limpiar el formulario",
+              "timedOut": false,
+              "duration": 714,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await LimpiarFormulario(driver);",
+              "err": {},
+              "uuid": "853d13a8-0705-4210-8d83-1888b606e364",
+              "parentUUID": "293f7e26-07a7-4f43-a95e-fc7173fe515c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Debe registrar datos en el formulario",
+              "fullTitle": "Pruebas del formulario de inscripción Debe registrar datos en el formulario",
+              "timedOut": false,
+              "duration": 1743,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await registrarFormulario(driver);",
+              "err": {},
+              "uuid": "ba54261c-c420-4599-950c-15a70602b074",
+              "parentUUID": "293f7e26-07a7-4f43-a95e-fc7173fe515c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Debe seleccionar y validar horarios",
+              "fullTitle": "Pruebas del formulario de inscripción Debe seleccionar y validar horarios",
+              "timedOut": false,
+              "duration": 1424,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await seleccionarHorarios(driver);",
+              "err": {},
+              "uuid": "e7c1b382-3670-4f58-bcbf-65d4d3b815f2",
+              "parentUUID": "293f7e26-07a7-4f43-a95e-fc7173fe515c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Debe finalizar el registro",
+              "fullTitle": "Pruebas del formulario de inscripción Debe finalizar el registro",
+              "timedOut": false,
+              "duration": 5244,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await finalizarRegistro(driver);",
+              "err": {},
+              "uuid": "3ea69892-b92f-4e34-90a4-091ced04a242",
+              "parentUUID": "293f7e26-07a7-4f43-a95e-fc7173fe515c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c3cb0aff-df98-4854-8601-b2ea89d045f5",
+            "853d13a8-0705-4210-8d83-1888b606e364",
+            "ba54261c-c420-4599-950c-15a70602b074",
+            "e7c1b382-3670-4f58-bcbf-65d4d3b815f2",
+            "3ea69892-b92f-4e34-90a4-091ced04a242"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10668,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.8.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
