@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de inscripción</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" id="menu-bloque-1" href="#">Formulario</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="menu-bloque-2" href="#">Selección de Horarios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="menu-bloque-3" href="#">Confirmación</a>
+            </li>
+        </ul>
+
+        <div id="formulario-inscripcion" class="card mb-5">
+            <div class="card-header text-center bg-info">
+                <h4>formulario</h4>
+            </div>
+            <div class="card-body">
+                <form id="registro">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="provincia" class="form-label">provincia</label>
+                        <input type="text" class="form-control" id="provincia" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Ciudad" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="Ciudad" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sector" class="form-label">sector</label>
+                        <input type="text" class="form-control" id="sector" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Calle" class="form-label">Calle</label>
+                        <input type="text" class="form-control" id="Calle" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="carrera" class="form-label">Selecciona tu carrera</label>
+                        <select class="form-select" id="carrera" required>
+                            <option value="">Seleccione una carrera</option>
+                            <option value="Software">Desarrollo de Software</option>
+                            <option value="Multimedia">Multimedia</option>
+                            <option value="Redes">Redes de Información</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-info " id="limpiarBtn">Limpiar</button>
+                    <button type="button" class="btn btn-primary" id="registroBtn">Registrar</button>
+                </form>
+            </div>
+        </div>
+        <div id="seleccion-horario" class="card hidden mb-5">
+            <div class="card-header">
+                <h4>selecion de orarios</h4>
+            </div>
+            <div class="card-body">
+                <form id="horarioForm">
+                    <div id="materia-contenedor">
+                        
+                    </div>
+                    <button type="button" class="btn btn-primary" id="siguienteBtn">Siguiente</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="comfirmacion-datos" class="card hidden">
+            <div class="card-header">
+                <h5>Comfirmacion</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <strong>Nombre:</strong> <span id="comNombre" class="text-muted"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Provincia:</strong> <span id="comProvincia" class="text-muted"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Ciudad:</strong> <span id="comCiudad" class="text-muted"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Sector:</strong> <span id="comSector" class="text-muted"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Calle:</strong> <span id="comCalle" class="text-muted"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Carrera:</strong> <span id="comCarrera" class="text-muted"></span>
+                    </li>
+                </ul>
+            </div>
+            <table class="table table-bordered" id="horariosTable">
+                <thead>
+                    <tr class="bg-info-subtle">
+                        <th class="bg-warning">Materia</th>
+                        <th >Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody >
+
+                </tbody>
+            </table>
+            <div class="mb-5">
+                <button type="button" class="btn btn-success" id="FinalizarBTN">Finalizar</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="inscricion.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</body>
+
+</html>

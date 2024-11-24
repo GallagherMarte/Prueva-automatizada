@@ -1,0 +1,41 @@
+body {
+    background-image: url('wallhaven-l8x1pr.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiar a flex-start para alinear el contenido desde la parte superior */
+    height: auto; /* Permite que el cuerpo se ajuste a su contenido */
+    margin: 0;
+    padding: 20px; /* Añade padding en el body */
+}
+
+/* Transparencia y centrado del contenedor */
+.container {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con 80% de opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 40px 0; /* Aumenta el margen superior e inferior para más separación */
+}
+
+/* Ocultar secciones por defecto */
+.hidden {
+    display: none;
+}
+/*'https://w.wallhaven.cc/full/yx/wallhaven-yxdrex.png' */
+body {
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Opcional: Para agregar un filtro sobre la imagen (por ejemplo, un color oscuro) */
+.bg-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Filtro oscuro */
+    padding: 20px;
+    border-radius: 10px;
+}
